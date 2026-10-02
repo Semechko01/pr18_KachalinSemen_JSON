@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         etUsername = findViewById(R.id.EditLogin)
         etPassword = findViewById(R.id.EditPassword)
         btnLogin = findViewById(R.id.ButtonLogin)
-        prefs = getSharedPreferences("user", Context.MODE_PRIVATE)
+        prefs = getSharedPreferences("user2", Context.MODE_PRIVATE)
         if (prefs.getBoolean("is_logged", false)) {
             startActivity(Intent(this, MainActivity2::class.java))
             return
@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
                 .putString("username", username)
                 .putString("password", password)
                 .putBoolean("is_logged", true)
+                .putString("books", "")
                 .apply()
             startActivity(Intent(this, MainActivity2::class.java))
 

@@ -7,4 +7,10 @@
     <string name="yourlogin">Ваш логин: </string>
     <string name="yourpassword">Ваш пароль: </string>
     <string name="vixod">Выход</string>
+    <string name="name">Имя</string>
+    <string name="email">Почта</string>
+    <string name="phone">Телефон</string>
+    <string name="save">Сохранить</string>
+    <string name="openlist">Открыть список</string>
+    <string name="sp">Список контактов:</string>
 </resources>
